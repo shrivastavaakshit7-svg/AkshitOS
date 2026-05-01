@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Class 9 Study Tracker</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700;900&family=Nunito:wght@300;400;800;900&display=swap" rel="stylesheet"><style>:root{--bg:#a3e635;--card:#fff;--acc:#fef08a;--tx:#000;--bw:3px;--sh:8px;--rdp:100px;--rdc:32px;--spr:cubic-bezier(0.34,1.56,0.64,1);--tr:transform .3s var(--spr),background-color .3s var(--spr),box-shadow .3s var(--spr),opacity .3s var(--spr)}*{margin:0;padding:0;box-sizing:border-box}body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8Y6BAAAACHRSTlMA93f393f393f3F6UAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAUSURBVDjLY2AYBaNgFAyEAgYAAfAAAfd9MscAAAAASUVORK5CYII=");opacity:.05;pointer-events:none;z-index:1000}body{background:var(--bg);color:var(--tx);font-family:Nunito,sans-serif;padding-bottom:8rem;overflow-x:hidden}.doodle{position:fixed;z-index:-1;pointer-events:none;font-size:2.5rem;animation:drift 20s linear infinite;will-change:transform;text-shadow:4px 4px 0 #000}@keyframes drift{0%{transform:translate3d(-10vw,-10vh,0) rotate(0)}100%{transform:translate3d(110vw,110vh,0) rotate(360deg)}}.d-1{top:10%;left:5%;animation-duration:25s}.d-2{top:60%;left:80%;animation-duration:35s;animation-delay:-5s}.d-3{top:80%;left:20%;animation-duration:30s;animation-delay:-10s}header{padding:5rem 1rem 3rem;max-width:1000px;margin:0 auto;text-align:center}h1{font-family:Fredoka,sans-serif;font-size:4.5rem;line-height:.9;letter-spacing:-.04em}h1 .lt{font-weight:300;display:block;font-size:2.2rem;margin-bottom:.5rem}h1 .bk{font-weight:900;text-transform:uppercase;position:relative}h1 .bk::after{content:'';position:absolute;bottom:8px;left:0;width:100%;height:15px;background:var(--acc);z-index:-1;transform:skewX(-15deg)}.reset-btn{margin-top:2rem;background:#ff6b6b;border:var(--bw) solid #000;padding:1rem 2rem;font-weight:900;border-radius:var(--rdp);cursor:pointer;box-shadow:6px 6px 0 #000;transition:var(--tr);text-transform:uppercase;font-size:.85rem}.reset-btn:hover{transform:translate3d(-3px,-3px,0);box-shadow:10px 10px 0 #000}.tabs-container{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#fff;border:var(--bw) solid #000;padding:.6rem;border-radius:var(--rdp);display:flex;gap:.5rem;box-shadow:12px 12px 0 #000;z-index:1000;will-change:transform}.tab{padding:.8rem 1.5rem;border:none;background:0 0;border-radius:var(--rdp);cursor:pointer;font-weight:900;text-transform:uppercase;font-size:.8rem;display:flex;align-items:center;gap:.6rem;transition:var(--tr);white-space:nowrap}.tab.active{background:var(--bg);box-shadow:inset 0 0 0 var(--bw) #000}.tab-badge{background:#000;color:#fff;padding:.1rem .5rem;border-radius:6px;font-size:.7rem}.tab-bubble{position:absolute;background:var(--bg);border:var(--bw) solid #000;border-radius:var(--rdp);z-index:-1;transition:var(--tr);pointer-events:none;will-change:transform,width,left}main{max-width:1100px;margin:0 auto;padding:0 1rem}.progress-container{background:#fff;border:var(--bw) solid #000;padding:3rem;border-radius:var(--rdc);box-shadow:var(--sh) var(--sh) 0 #000;margin-bottom:4rem}.prog-lbl{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2rem}.stat-group{display:flex;flex-direction:column}.stat-group .lbl{font-weight:900;text-transform:uppercase;font-size:.75rem;letter-spacing:.15em;color:#666;margin-bottom:.5rem}.stat-group .stat{font-family:Fredoka,sans-serif;font-weight:900;font-size:4rem;letter-spacing:-.05em;line-height:1}.prog-bg{background:#f1f1f1;height:40px;border:var(--bw) solid #000;border-radius:var(--rdp);overflow:hidden;position:relative}.prog-fill{background:#6366f1;height:100%;width:0;transition:width 1s var(--spr);border-right:var(--bw) solid #000}.chapter-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:4rem}.card-w{position:relative;z-index:1}.card-w::after,.card-w::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;border:var(--bw) solid #000;border-radius:var(--rdc);z-index:-1;transition:var(--tr)}.card-w::before{transform:rotate(-3deg)}.card-w::after{transform:rotate(2deg);opacity:.6}.card{background:#fff;border:var(--bw) solid #000;padding:3rem 2.5rem;border-radius:var(--rdc);box-shadow:var(--sh) var(--sh) 0 #000;display:flex;flex-direction:column;gap:1.5rem;transition:var(--tr);cursor:pointer;height:100%;will-change:transform}.card:hover{transform:translate3d(0,-15px,0) scale(1.03);box-shadow:20px 20px 0 #000;z-index:10}.card-w:hover::before{transform:rotate(-6deg) translate3d(-15px,-8px,0)}.card-w:hover::after{transform:rotate(5deg) translate3d(15px,-3px,0)}.card:active{transform:scale(1.1);transition:transform .1s var(--spr)}.card.done{background:#f8fafc}.card-h{display:flex;justify-content:space-between;align-items:center}.ch-n{font-weight:900;font-size:.75rem;background:#000;color:#fff;padding:.5rem 1rem;border-radius:12px;letter-spacing:.05em}.badge{font-weight:900;font-size:.65rem;text-transform:uppercase;padding:.45rem 1rem;border-radius:var(--rdp);background:#fff;border:var(--bw) solid #000;position:relative;box-shadow:0 0 0 4px #fff,0 0 0 7px #000;margin-right:8px}.name{font-family:Fredoka,sans-serif;font-size:1.8rem;font-weight:900;line-height:1.1;letter-spacing:-.02em}.links{display:flex;flex-direction:column;gap:1rem}.link{text-decoration:none;color:#000;font-weight:800;padding:1.25rem;border:2.5px solid #000;border-radius:20px;display:flex;align-items:center;gap:1.25rem;font-size:.85rem;transition:var(--tr)}.link:hover{background:var(--bg);transform:translate3d(10px,0,0)}.done-btn{margin-top:1.5rem;background:#fff;border:var(--bw) solid #000;padding:1.5rem;border-radius:var(--rdp);font-weight:900;text-transform:uppercase;cursor:pointer;box-shadow:6px 6px 0 #000;transition:var(--tr);letter-spacing:.05em}.done-btn:hover{transform:translate3d(-3px,-3px,0);box-shadow:10px 10px 0 #000}.card.done .done-btn{background:var(--bg)}@keyframes flip{0%{transform:rotateX(0);opacity:1}50%{transform:rotateX(-90deg);opacity:.5}51%{transform:rotateX(90deg);opacity:.5}100%{transform:rotateX(0);opacity:1}}.flip{display:inline-block;animation:flip .4s var(--spr)}.spark{height:4px;background:#eee;border-radius:2px;overflow:hidden;margin-top:.5rem;display:flex}.spark-f{height:100%;background:#000;transition:width .6s var(--spr)}.v-badge{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--bg);border:2px solid #000;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);margin-left:.5rem}@keyframes shake{0%,100%{transform:translate3d(0,0,0)}25%{transform:translate3d(-8px,0,0)}75%{transform:translate3d(8px,0,0)}}.shake{animation:shake .2s ease-in-out 3}@media (max-width:768px){h1{font-size:3rem}h1 .lt{font-size:1.5rem}.tabs-container{width:95%;overflow-x:auto;justify-content:flex-start;padding:.5rem;bottom:1rem}.stat-group .stat{font-size:3rem}.chapter-grid{gap:3rem}}</style></head><body><div class="doodle d-1">✨</div><div class="doodle d-2">🌈</div><div class="doodle d-3">🌀</div><header><h1><span class="lt">Personal Study</span> <span class="bk">Tracker</span></h1><button class="reset-btn" onclick="resetAll()">Reset All Progress</button></header><main><div class="progress-container"><div class="prog-lbl"><div class="stat-group"><span class="lbl">Total Complete</span> <span class="stat" id="perc">0%</span></div><div class="stat-group" style="text-align:right"><span class="lbl">Current Focus</span> <span class="stat" id="sub-lbl" style="font-size:1.8rem">Mathematics</span></div></div><div class="prog-bg"><div id="prog-f" class="prog-fill"></div></div></div><div class="chapter-grid" id="grid"></div></main><div class="tabs-container" id="tabs-nav"><div class="tab-bubble" id="bubble"></div><button class="tab active" onclick="switchSubject('math',this)">📐 <span class="lbl">Math</span> <span class="tab-badge" id="math-badge">12</span></button><button class="tab" onclick="switchSubject('science',this)">🔬 <span class="lbl">Science</span> <span class="tab-badge" id="science-badge">12</span></button><button class="tab" onclick="switchSubject('social',this)">🌍 <span class="lbl">Social</span> <span class="tab-badge" id="social-badge">10</span></button><button class="tab" onclick="switchSubject('english',this)">📖 <span class="lbl">English</span> <span class="tab-badge" id="english-badge">5</span></button></div><script>const DATA={math:[{id:'m1',num:'01',name:'Number Systems',tag:'Algebra',yt:[{l:'Watch Video',u:'https://www.youtube.com/watch?v=szD37Ay9Nzo'}],p:'https://www.khanacademy.org/math/ncert-class-9/x2757d6348a04b24e:number-systems-ncert-new'},{id:'m2',num:'02',name:'Polynomials',tag:'Algebra',yt:[{l:'Watch Video',u:'https://www.youtube.com/watch?v=IorEtTDgMVQ'}],p:'https://www.khanacademy.org/math/ncert-class-9/x2757d6348a04b24e:polynomials-ncert-new'},{id:'m3',num:'03',name:'Coordinate Geometry',tag:'Geometry',yt:[{l:'Playlist',u:'https://www.youtube.com/playlist?list=PL7eKoJuwryW5EhQTpbrAii8vrBka2TvTO'}],p:'https://www.khanacademy.org/math/in-in-grade-9-ncert'},{id:'m4',num:'04',name:'Linear Equations',tag:'Algebra',yt:[{l:'Playlist',u:'https://www.youtube.com/playlist?list=PL7eKoJuwryW6UzPNEOaFjmg79QRZNsGML'}],p:'https://www.khanacademy.org/math/ncert-class-9'},{id:'m5',num:'05',name:"Euclid's Geometry",tag:'Geometry',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/math/ncert-class-9'},{id:'m6',num:'06',name:'Lines and Angles',tag:'Geometry',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/math/ncert-class-9'},{id:'m7',num:'07',name:'Triangles',tag:'Geometry',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/math/in-in-grade-9-ncert/xfd53e0255cd302f8:triangles'},{id:'m8',num:'08',name:'Quadrilaterals',tag:'Geometry',yt:[{l:'Video',u:'https://www.youtube.com/watch?v=JycQrj-yeNI'}],p:'https://www.khanacademy.org/math/ncert-class-9/x2757d6348a04b24e:quadrilaterals-ncert-new'},{id:'m9',num:'09',name:'Circles',tag:'Geometry',yt:[{l:'Video',u:'https://www.youtube.com/watch?v=lw5fQHe4VyQ'}],p:'https://www.khanacademy.org/math/ncert-class-9/x2757d6348a04b24e:circles-ncert-new'},{id:'m10',num:'10',name:"Heron's Formula",tag:'Mensuration',yt:[{l:'Video',u:'https://www.youtube.com/watch?v=vmjNVkU_EFw'}],p:'https://www.khanacademy.org/math/ncert-class-9/x2757d6348a04b24e:herons-formula-ncert-new'},{id:'m11',num:'11',name:'Surface Areas',tag:'Mensuration',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/math/ncert-class-9'},{id:'m12',num:'12',name:'Statistics',tag:'Data',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/math/ncert-class-9'}],science:[{id:'s1',num:'01',name:'Matter Surroundings',tag:'Chemistry',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/class-9-chemistry/x46dd29ce84a663ea:matter-in-our-surroundings'},{id:'s2',num:'02',name:'Pure Matter?',tag:'Chemistry',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/ncert-science-9'},{id:'s3',num:'03',name:'Atoms & Molecules',tag:'Chemistry',yt:[{l:'Elements',u:'https://www.youtube.com/watch?v=DeZJxHwIKiE'}],p:'https://www.khanacademy.org/science/ncert-class-9-science/x7e8d66f732d28ce4:atoms-and-molecules'},{id:'s4',num:'04',name:'Atomic Structure',tag:'Chemistry',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/ncert-science-9'},{id:'s5',num:'05',name:'Cell: Unit of Life',tag:'Biology',yt:[{l:'The Cell',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/class-9-biology-india'},{id:'s6',num:'06',name:'Tissues',tag:'Biology',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/class-9-biology-india'},{id:'s7',num:'07',name:'Motion',tag:'Physics',yt:[{l:'Speed',u:'https://www.youtube.com/watch?v=4-WNdVvTG1s'},{l:'Graphs',u:'https://www.youtube.com/watch?v=yB3KxVSxK54'},{l:'Playlist',u:'https://www.youtube.com/playlist?list=PL2ub1_oKCn7oWeAKoLZV-hWT4tthqdHtg'}],p:'https://www.khanacademy.org/science/in-in-class9th-physics-india/in-in-motion'},{id:'s8',num:'08',name:'Force & Laws',tag:'Physics',yt:[{l:'Forces',u:'https://www.youtube.com/watch?v=kco4p5z9-gI'}],p:'https://www.khanacademy.org/science/in-in-class9th-physics-india/in-in-force-laws-of-motion'},{id:'s9',num:'09',name:'Gravitation',tag:'Physics',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/in-in-class9th-physics-india/in-in-gravity'},{id:'s10',num:'10',name:'Work & Energy',tag:'Physics',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/in-in-class9th-physics-india'},{id:'s11',num:'11',name:'Sound',tag:'Physics',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/in-in-class9th-physics-india/in-in-sound-india'},{id:'s12',num:'12',name:'Food Resources',tag:'Biology',yt:[{l:'Video',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/science/ncert-science-9'}],social:[{id:'so1',num:'01',name:'French Revolution',tag:'History',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/humanities/world-history/euro-hist/french-rev-tutorial'},{id:'so2',num:'02',name:'Russian Rev',tag:'History',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/humanities/world-history'},{id:'so3',num:'03',name:'Nazism',tag:'History',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org/humanities/world-history'},{id:'so4',num:'01',name:'India: Size',tag:'Geography',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'so5',num:'02',name:'Features of India',tag:'Geography',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'so6',num:'04',name:'Climate',tag:'Geography',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'so7',num:'01',name:'Democracy?',tag:'Civics',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'so8',num:'02',name:'Constitutional',tag:'Civics',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'so9',num:'01',name:'Village Palampur',tag:'Economics',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'so10',num:'02',name:'People/Resource',tag:'Economics',yt:[{l:'Tutorial',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'}],english:[{id:'e1',num:'01',name:'The Fun They Had',tag:'Beehive',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'e2',num:'02',name:'Sound of Music',tag:'Beehive',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'e3',num:'03',name:'The Little Girl',tag:'Beehive',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'e4',num:'04',name:'Beautiful Mind',tag:'Beehive',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'},{id:'e5',num:'05',name:'Snake & Mirror',tag:'Beehive',yt:[{l:'Search',u:'https://www.youtube.com/c/KhanAcademyIndiaEnglish'}],p:'https://www.khanacademy.org'}]};let curSub='math',done=new Set(),lastP=0,resizeTimer;
+function init(){
+    const s=localStorage.getItem('cl9');
+    if(s)done=new Set(JSON.parse(s));
+    moveB(document.querySelector('.tab.active'));
+    render()
+}
+function render(){
+    rTabs();
+    rCards();
+    uProg()
+}
+function rTabs(){
+    for(let s in DATA){
+        const t=DATA[s].length,d=DATA[s].filter(ch=>done.has(ch.id)).length;
+        document.getElementById(`${s}-badge`).innerText=t-d
+    }
+}
+function rCards(){
+    const g=document.getElementById('grid');
+    g.innerHTML='';
+    const chs=DATA[curSub],sn={math:'Mathematics',science:'Science',social:'Social Science',english:'English'};
+    document.getElementById('sub-lbl').innerText=sn[curSub];
+    chs.forEach(ch=>{
+        const isD=done.has(ch.id),w=document.createElement('div');
+        w.className='card-w';
+        let y=ch.yt.map(l=>`<a href="${l.u}" target="_blank" class="link"><span>▶</span> ${l.l}</a>`).join('');
+        w.innerHTML=`<div class="card ${isD?'done':''}" id="card-${ch.id}">
+            <div class="card-h">
+                <span class="ch-n">${ch.num}</span>
+                <div style="display:flex;align-items:center">
+                    <span class="badge">${ch.tag}</span>
+                    <div class="v-badge" style="display:${isD?'inline-flex':'none'}"></div>
+                </div>
+            </div>
+            <h3 class="name">${ch.name}</h3>
+            <div class="spark"><div class="spark-f" style="width:${isD?'100%':'15%'}"></div></div>
+            <div class="links">${y}<a href="${ch.p}" target="_blank" class="link" style="border-color:#10b981"><span>🚀</span> Mastery</a></div>
+            <button class="done-btn" onclick="toggle('${ch.id}',this)">${isD?'Undo Done':'Mark Complete'}</button>
+        </div>`;
+        g.appendChild(w)
+    })
+}
+function switchSubject(s,e){
+    curSub=s;
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    e.classList.add('active');
+    moveB(e);
+    render()
+}
+function moveB(e){
+    if(!e) return;
+    const b=document.getElementById('bubble');
+    b.style.width=`${e.offsetWidth}px`;
+    b.style.height=`${e.offsetHeight}px`;
+    b.style.left=`${e.offsetLeft}px`;
+    b.style.top=`${e.offsetTop}px`
+}
+function toggle(id,b){
+    const isD = done.has(id);
+    if(isD) done.delete(id); else done.add(id);
+    localStorage.setItem('cl9',JSON.stringify(Array.from(done)));
+    
+    const card = document.getElementById(`card-${id}`);
+    const nowD = done.has(id);
+    
+    card.classList.toggle('done', nowD);
+    card.querySelector('.v-badge').style.display = nowD ? 'inline-flex' : 'none';
+    card.querySelector('.spark-f').style.width = nowD ? '100%' : '15%';
+    card.querySelector('.done-btn').innerText = nowD ? 'Undo Done' : 'Mark Complete';
+    
+    card.style.transform='scale(1.05)';
+    setTimeout(() => { card.style.transform=''; }, 200);
+    
+    rTabs();
+    uProg();
+}
+function uProg(){
+    let t=0;
+    for(let s in DATA) t+=DATA[s].length;
+    const p=Math.round((done.size/t)*100),e=document.getElementById('perc');
+    if(p!==lastP){
+        e.classList.add('flip');
+        setTimeout(()=>e.classList.remove('flip'),400);
+        lastP=p
+    }
+    e.innerText=`${p}%`;
+    document.getElementById('prog-f').style.width=`${p}%`
+}
+function resetAll(){
+    if(confirm('Reset all?')){
+        done.clear();
+        localStorage.removeItem('cl9');
+        render()
+    } else {
+        const b=document.querySelector('.reset-btn');
+        b.classList.add('shake');
+        setTimeout(()=>b.classList.remove('shake'),400)
+    }
+}
+window.onload=init;
+window.onresize=()=>{
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => moveB(document.querySelector('.tab.active')), 100);
+};</script></body></html>
